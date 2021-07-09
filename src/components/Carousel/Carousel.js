@@ -74,7 +74,7 @@ const Carousel = (props) => {
 
                     <div 
                         className={`carousel-content show-${show}`}
-                        style={{ transform: `translateX(-${currentIndex * (100 / show)}%)` }}
+                        style={{ transform: `translateX(-${currentIndex * (104 / show)}%)` }}
                     >
                         {children}
                     </div>
