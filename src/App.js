@@ -6,6 +6,10 @@ import img1 from './Images/img1.gif'
 import img3 from './Images/img3.gif'
 import img4 from './Images/img4.jpg'
 import img5 from './Images/img5.jpg'
+// import { FcLike } from "react-icons/fc";
+// import { IconContext } from "react-icons";
+
+
 
 function App() {
   return (
@@ -21,17 +25,28 @@ function App() {
           height="300"
           // className="d-inline-block align-top"
         />
+        {/* <IconContext.Provider value={{className:'heartImg', size: '2.5rem' }}>
+         <button className="favBtn" >
+            < FcLike />
+          </button>
+         </IconContext.Provider> */}
       </div>
 
       <div style={{padding: 8}}>
         <img
-          alt="img 1"
+          alt="img 2"
           src={ img2 }
           style={{width: '100%'}}
           // width="1600"
           height="300"
           // className="d-inline-block align-top"
         />
+        {/* <IconContext.Provider value={{className:'heartImg', size: '2.5rem' }}>
+          <button className='favBtn2'>
+            < FcLike />
+          </button>
+        </IconContext.Provider> */}
+        
       </div>
 
       <div style={{padding: 8}}>

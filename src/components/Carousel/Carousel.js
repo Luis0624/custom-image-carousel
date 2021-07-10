@@ -1,5 +1,7 @@
 import { React, useState, useEffect } from 'react'
 import './carousel.css'
+import { FcLike } from "react-icons/fc";
+import { IconContext } from "react-icons";
 
 const Carousel = (props) => {
     const {children, show} = props
@@ -77,6 +79,12 @@ const Carousel = (props) => {
                         style={{ transform: `translateX(-${currentIndex * (104 / show)}%)` }}
                     >
                         {children}
+                        <IconContext.Provider value={{className:'heartImg', size: '2.5rem' }}>
+                            <button className="favBtn" >
+                                < FcLike />
+                            </button>
+                        </IconContext.Provider>
+                        
                     </div>
 
                    {
